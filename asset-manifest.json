@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/CSCI39547_Assignment4/static/css/main.ad9d0e81.chunk.css",
+    "main.js": "/CSCI39547_Assignment4/static/js/main.249891ff.chunk.js",
+    "main.js.map": "/CSCI39547_Assignment4/static/js/main.249891ff.chunk.js.map",
+    "runtime-main.js": "/CSCI39547_Assignment4/static/js/runtime-main.2125e0c9.js",
+    "runtime-main.js.map": "/CSCI39547_Assignment4/static/js/runtime-main.2125e0c9.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/CSCI39547_Assignment4/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.26a5d45d.chunk.js": "/CSCI39547_Assignment4/static/js/2.26a5d45d.chunk.js",
+    "static/js/2.26a5d45d.chunk.js.map": "/CSCI39547_Assignment4/static/js/2.26a5d45d.chunk.js.map",
+    "index.html": "/CSCI39547_Assignment4/index.html",
+    "precache-manifest.a37729f5882c0a14935fd01d891fa81f.js": "/CSCI39547_Assignment4/precache-manifest.a37729f5882c0a14935fd01d891fa81f.js",
+    "service-worker.js": "/CSCI39547_Assignment4/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/CSCI39547_Assignment4/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.ad9d0e81.chunk.css.map": "/CSCI39547_Assignment4/static/css/main.ad9d0e81.chunk.css.map",
+    "static/js/2.26a5d45d.chunk.js.LICENSE.txt": "/CSCI39547_Assignment4/static/js/2.26a5d45d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2125e0c9.js",
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.26a5d45d.chunk.js",
+    "static/css/main.ad9d0e81.chunk.css",
+    "static/js/main.249891ff.chunk.js"
+  ]
+}
