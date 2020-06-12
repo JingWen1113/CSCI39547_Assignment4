@@ -17,63 +17,61 @@ class ButtonLayout extends Component {
         cols: nextProps.cols,
       };
     }
+
+    return null;
   }
 
   render() {
-    //destructure props for ease of use
-    const {
-      addRow,
-      addCol,
-      removeRow,
-      removeCol,
-      resetGrid,
-      fillAll,
-      fillUncolored,
-      clearGrid,
-      colorBox,
-      getSelectedColor,
-      selectedColor,
-    } = this.props;
-
     const { rows, cols } = this.state;
-    var gridExists = rows;
     return (
       <div className="container">
-        <button className="btn-sm btn-primary m-2" onClick={addRow}>
+        <button className="btn-sm btn-primary m-2" onClick={this.props.addRow}>
           Add Row
         </button>
-        <button className="btn-sm btn-primary m-2" onClick={addCol}>
+        <button className="btn-sm btn-primary m-2" onClick={this.props.addCol}>
           Add Column
         </button>
-        <button className="btn-sm btn-primary m-2" onClick={removeRow}>
+        <button
+          className="btn-sm btn-primary m-2"
+          onClick={this.props.removeRow}
+        >
           Remove Row
         </button>
-        <button className="btn-sm btn-primary m-1" onClick={removeCol}>
+        <button
+          className="btn-sm btn-primary m-1"
+          onClick={this.props.removeCol}
+        >
           Remove Column
         </button>
         {(rows > 0) & (cols > 0) ? (
           <div className="grid view btn" id="gv-btn">
-            <button className="btn-sm  m-2" onClick={fillAll}>
+            <button className="btn-sm  m-2" onClick={this.props.fillAll}>
               Fill All
-            </button>
-            <button className="btn-sm btn-primary m-2" onClick={fillUncolored}>
-              Fill Uncolored
-            </button>
-            <button className="btn-sm btn-primary m-2" onClick={clearGrid}>
-              Clear
             </button>
             <button
               className="btn-sm btn-primary m-2"
-              style={{ backgroundColor: "red" }}
-              onClick={resetGrid}
+              onClick={this.props.fillUncolored}
             >
-              Reset Grid
+              Fill Uncolored
+            </button>
+            <button
+              className="btn-sm btn-primary m-2"
+              onClick={this.props.clearGrid}
+            >
+              Clear
             </button>
           </div>
         ) : null}
+        <button
+          className="btn-sm btn-primary m-2"
+          style={{ backgroundColor: "red" }}
+          onClick={this.props.resetGrid}
+        >
+          Reset Grid
+        </button>
         <SelectOptions
-          selectedColor={selectedColor}
-          getSelectedColor={getSelectedColor}
+          selectedColor={this.props.selectedColor}
+          getSelectedColor={this.props.getSelectedColor}
         />
         <GridInfo rows={rows} cols={cols} />
       </div>
