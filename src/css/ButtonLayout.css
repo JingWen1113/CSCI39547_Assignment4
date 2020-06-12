@@ -1,0 +1,8 @@
+#gv-btn {
+  margin-left: -13px;
+}
+
+#gv-btn * {
+  background-color: rgb(109, 0, 93);
+  color: white;
+}
