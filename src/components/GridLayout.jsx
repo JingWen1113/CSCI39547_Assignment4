@@ -10,7 +10,7 @@ const GridLayout = ({
   onMouseDown,
 }) => {
   return (rows > 0) & (cols > 0) ? (
-    <div className="container" id="grid" onMouseUp={(e) => onMouseRelease(e)}>
+    <table id="grid" onMouseUp={(e) => onMouseRelease(e)}>
       {Array.from(Array(rows), (e, i) => {
         return (
           <div className="row" key={i}>
@@ -27,7 +27,7 @@ const GridLayout = ({
           </div>
         );
       })}
-    </div>
+    </table>
   ) : null;
 };
 
