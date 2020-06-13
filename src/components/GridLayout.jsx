@@ -10,17 +10,19 @@ const GridLayout = ({
   onMouseDown,
 }) => {
   return (rows > 0) & (cols > 0) ? (
-    <table id="grid" onMouseUp={(e) => onMouseRelease(e)}>
+    <table className="container" id="grid">
       {Array.from(Array(rows), (e, i) => {
         return (
-          <div className="row" key={i}>
+          <div className="row" key={i} id="row">
             {Array.from(Array(cols), (f, j) => {
               return (
                 <div
-                  className="container col "
+                  className="container col"
                   key={j}
                   onMouseOver={(e) => colorMultiple(e)}
                   onMouseDown={(e) => onMouseDown(e)}
+                  onMouseUp={(e) => onMouseRelease(e)}
+                  id="col"
                 ></div>
               );
             })}

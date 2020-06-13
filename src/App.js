@@ -9,8 +9,8 @@ class App extends Component {
 
     //state initialization
     this.state = {
-      rows: 0,
-      cols: 0,
+      rows: 1,
+      cols: 40,
       selectedColor: "green",
       mouseReleased: true,
       mouseDown: false,
