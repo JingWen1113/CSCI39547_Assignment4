@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import ButtonLayout from "./components/ButtonLayout";
 import GridLayout from "./components/GridLayout";
+import {
+  ThemeackgroundColor,
+  ThemebuttonColor,
+  ThemeContentColor,
+} from "./components/themeColor";
 
 class App extends Component {
   constructor(props) {
@@ -171,7 +176,7 @@ class App extends Component {
   render() {
     const { rows, cols, selectedColor } = this.state;
     return (
-      <div className="container" ref={this.myRef}>
+      <ThemeackgroundColor className="container" ref={this.myRef}>
         <ButtonLayout
           addRow={this.addRow}
           addCol={this.addCol}
@@ -186,6 +191,7 @@ class App extends Component {
           rows={rows}
           cols={cols}
         />
+
         <GridLayout
           rows={rows}
           cols={cols}
@@ -193,7 +199,7 @@ class App extends Component {
           onMouseRelease={this.onMouseRelease}
           onMouseDown={this.onMouseDown}
         />
-      </div>
+      </ThemeackgroundColor>
     );
   }
 }

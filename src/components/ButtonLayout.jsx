@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import "../css/ButtonLayout.css";
 import SelectOptions from "./SelectOptions";
 import GridInfo from "./GridInfo";
+import {
+  ThemeackgroundColor,
+  ThemebuttonColor,
+  ThemeContentColor,
+} from "./themeColor";
 
 class ButtonLayout extends Component {
   state = { rows: this.props.rows, cols: this.props.cols };
@@ -25,9 +30,12 @@ class ButtonLayout extends Component {
     const { rows, cols } = this.state;
     return (
       <div className="container">
-        <button className="btn-sm btn-primary m-2" onClick={this.props.addRow}>
+        <ThemebuttonColor
+          className="btn-sm btn-primary m-2"
+          onClick={this.props.addRow}
+        >
           Add Row
-        </button>
+        </ThemebuttonColor>
         <button className="btn-sm btn-primary m-2" onClick={this.props.addCol}>
           Add Column
         </button>
