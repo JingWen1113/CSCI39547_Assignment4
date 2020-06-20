@@ -36,47 +36,53 @@ class ButtonLayout extends Component {
         >
           Add Row
         </ThemebuttonColor>
-        <button className="btn-sm btn-primary m-2" onClick={this.props.addCol}>
+        <ThemebuttonColor
+          className="btn-sm btn-primary m-2"
+          onClick={this.props.addCol}
+        >
           Add Column
-        </button>
-        <button
+        </ThemebuttonColor>
+        <ThemebuttonColor
           className="btn-sm btn-primary m-2"
           onClick={this.props.removeRow}
         >
           Remove Row
-        </button>
-        <button
+        </ThemebuttonColor>
+        <ThemebuttonColor
           className="btn-sm btn-primary m-1"
           onClick={this.props.removeCol}
         >
           Remove Column
-        </button>
+        </ThemebuttonColor>
         {(rows > 0) & (cols > 0) ? (
           <div className="grid view btn" id="gv-btn">
-            <button className="btn-sm  m-2" onClick={this.props.fillAll}>
+            <ThemebuttonColor
+              className="btn-sm  m-2"
+              onClick={this.props.fillAll}
+            >
               Fill All
-            </button>
-            <button
+            </ThemebuttonColor>
+            <ThemebuttonColor
               className="btn-sm btn-primary m-2"
               onClick={this.props.fillUncolored}
             >
               Fill Uncolored
-            </button>
-            <button
+            </ThemebuttonColor>
+            <ThemebuttonColor
               className="btn-sm btn-primary m-2"
               onClick={this.props.clearGrid}
             >
               Clear
-            </button>
+            </ThemebuttonColor>
           </div>
         ) : null}
-        <button
+        <ThemebuttonColor
           className="btn-sm btn-primary m-2"
           style={{ backgroundColor: "red" }}
           onClick={this.props.resetGrid}
         >
           Reset Grid
-        </button>
+        </ThemebuttonColor>
         <SelectOptions
           selectedColor={this.props.selectedColor}
           getSelectedColor={this.props.getSelectedColor}

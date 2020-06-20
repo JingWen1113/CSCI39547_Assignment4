@@ -55,9 +55,10 @@ animation-play-state:running;
 const ThemebuttonColor = styled.button`
   display: inline-flex;
   height: 40px;
-  width: 150px;
+  width: fit-content;
   border: 2px solid #fff;
-  margin: 20px 20px 20px 20px;
+  margin: 20px;
+  padding: 5px 20px;
   color: #333;
   background: #fff;
   text-transform: uppercase;
@@ -69,7 +70,8 @@ const ThemebuttonColor = styled.button`
   overflow: hidden;
 
   &:hover {
-    background-image: linear-gradient(
+    animation: LGBT-Flag-animation 2.5s ease-in-out infinite;
+    background: linear-gradient(
       70deg,
       #ff0018,
       #ffa52c,
@@ -81,6 +83,77 @@ const ThemebuttonColor = styled.button`
     color: white;
     font-weight: bold;
     border-color: white;
+  }
+  /* Hover Animation (rainbow) */
+  @keyframes LGBT-Flag-animation {
+    0% {
+      background: linear-gradient(
+        70deg,
+        #ff0018,
+        #ffa52c,
+        #ffff41,
+        #008018,
+        #0000f9,
+        #86007d
+      );
+    }
+    20% {
+      background: linear-gradient(
+        120deg,
+        #ff0018,
+        #ffa52c,
+        #ffff41,
+        #008018,
+        #0000f9,
+        #86007d
+      );
+    }
+    40% {
+      background: linear-gradient(
+        150deg,
+        #ff0018,
+        #ffa52c,
+        #ffff41,
+        #008018,
+        #0000f9,
+        #86007d
+      );
+    }
+
+    60% {
+      background: linear-gradient(
+        150deg,
+        #ff0018,
+        #ffa52c,
+        #ffff41,
+        #008018,
+        #0000f9,
+        #86007d
+      );
+    }
+    80% {
+      background: linear-gradient(
+        170deg,
+        #ff0018,
+        #ffa52c,
+        #ffff41,
+        #008018,
+        #0000f9,
+        #86007d
+      );
+    }
+
+    100% {
+      background: linear-gradient(
+        190deg,
+        #ff0018,
+        #ffa52c,
+        #ffff41,
+        #008018,
+        #0000f9,
+        #86007d
+      );
+    }
   }
 `;
 
