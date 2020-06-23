@@ -4,7 +4,7 @@
 import styled, { css } from "styled-components";
 
 const ThemeackgroundColor = styled.div`
-  height: 100vh;
+  height: 1000vh;
   width: 100%;
   color: white;
   max-width: 100%;
